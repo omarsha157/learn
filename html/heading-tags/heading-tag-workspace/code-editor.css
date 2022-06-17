@@ -1,0 +1,36 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+}
+
+.editor {
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    width: 50%;
+    height: 80vh;
+    overflow: scroll;
+    margin: auto;
+    background: #f4f4f9;
+    font-family: Courier, sans-serif;
+    font-size: 14px;
+}
+
+iframe {
+    width: 50%;
+    height: 80vh;
+}
