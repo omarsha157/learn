@@ -34,3 +34,21 @@ iframe {
     width: 50%;
     height: 80vh;
 }
+
+@media only screen and (max-width: 768px) {
+
+    .editor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    textarea {
+        width: 100%;
+        height: 50vh;
+    }
+    
+    iframe {
+        width: 100%;
+        height: 50vh;
+    }
+}
