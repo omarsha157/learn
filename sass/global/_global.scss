@@ -36,7 +36,7 @@ a {
 }
 
 .code-in-para {
-        color: crimson;
+        color: $codePara;
 }
 
 // styel for codes
@@ -44,11 +44,9 @@ a {
 .codein {
     background-color: $codein-bgColor;
     padding: 1em;
-}
-
-code {
     color: $codein-color;
 }
+
 .tag-symbol {
     color: $code-tag-color;
 }
