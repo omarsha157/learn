@@ -1,0 +1,67 @@
+@import "./variables";
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+    color: $body-color;
+}
+
+a {
+    color: $anchortag-color;
+    text-decoration: none;
+}
+
+.wrapper {
+    padding: 0 5%;
+}
+
+.active {
+    color: #d7d7d7;
+}
+
+.no-list-style ul li {
+    list-style-type: none;
+}
+
+.code-in-para {
+        color: crimson;
+}
+
+// styel for codes
+
+.codein {
+    background-color: $codein-bgColor;
+    padding: 1em;
+}
+
+code {
+    color: $codein-color;
+}
+.tag-symbol {
+    color: $code-tag-color;
+}
+.tag-symbol::before {
+    content: "<";
+    color: $code-bracket-color;
+}
+.tag-symbol::after {
+    content: ">";
+    color: $code-bracket-color;
+}
+
+.codeout {
+    background-color: $codeout-bgColor;
+    padding: 1em;
+}

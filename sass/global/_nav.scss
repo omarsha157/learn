@@ -1,0 +1,22 @@
+@import "./variables";
+
+
+nav {
+    display: flex;
+    justify-content: unset;
+    align-items: center;
+    padding: 1em 5%;
+    background-color: $nav-bgColor;
+}
+
+.main-nav {
+    justify-content: space-between;
+}
+
+
+nav a {
+    color: $nav-color;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 0.4em;
+}
