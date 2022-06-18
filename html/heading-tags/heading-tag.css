@@ -18,7 +18,7 @@ body {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     padding: 1em 5%;
     background-color: #689da3;
 }
@@ -26,7 +26,11 @@ nav {
 nav a {
     color: white;
     font-size: 1.2rem;
-    font-weight: bold;
+    margin: 0 0.4em;
+}
+
+.active {
+    color: #d7d7d7;
 }
 
 .wrapper {
@@ -40,4 +44,29 @@ a {
 
 ul li {
     list-style-type: none;
+}
+
+.codein {
+    background-color: #263238;
+    padding: 1em;
+}
+
+code {
+    color: white;
+}
+.tag-symbol {
+    color: #e37178;
+}
+.tag-symbol::before {
+    content: "<";
+    color: #89ddff;
+}
+.tag-symbol::after {
+    content: ">";
+    color: #89ddff;
+}
+
+.codeout {
+    background-color: rgb(245, 245, 245);
+    padding: 1em;
 }

@@ -5,16 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./p-tag.css">
 </head>
 <body>
     <nav>
-        <a href="./../../index.html">home</a> &#10148; <a href="../html.html">html</a> &#10148; <a>p-tag</a>
+        <a href="./../../index.html">home</a> &#10148; <a href="../html.html">html</a> &#10148; <a class="active">p-tag</a>
     </nav>
 
-    <h1>p tags</h1>
-    <p>p tags are used for paragraphs</p>
+    <div class="wrapper">
+        <h1>p tags</h1>
+        <p>p tags are used for paragraphs</p>
+    
+        <p>input:</p>
 
-    <code>&lt;p&gt;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero modi quos temporibus&lt;/p&gt;</code>
+        <div class="codein">
+            <code><span class="tag-symbol">p</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero modi quos temporibus<span class="tag-symbol">/p</span></code>
+        </div>
+
+        <p>output:</p>
+
+        <div class="codeout">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero modi quos temporibus</p>
+        </div>
+
+    </div>
 
 </body>
 </html>
