@@ -9,13 +9,14 @@ codein - for code input style input color,bgcolor, padding
 tag-symbol - for coloring html tags
 tag-symbol::before and tag-symbol::after - to give "<" and ">" for tag-symbol
 code-out - to give background color to code output
+anchor-color-unset - remove font color of a tags
 
 # SASS variables
 
 body-color - font color for body tag(global)
 
-nav-bgColor - font color for nav tag(nav)
-nav-color - background color for nav tag(nav)
+nav-bgColor - font color for nav tag(global)
+nav-color - background color for nav tag(global)
 
 anchortag-color - font color for anchor tag(global)
 

@@ -18,6 +18,37 @@ body {
   color: #3d4045;
 }
 
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em 5%;
+  background-color: #689da3;
+}
+
+.main-nav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav a {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 0.4em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 a {
   color: #7295e7;
   text-decoration: none;
@@ -64,31 +95,8 @@ a {
   padding: 1em;
 }
 
-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: unset;
-      -ms-flex-pack: unset;
-          justify-content: unset;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 1em 5%;
-  background-color: #689da3;
-}
-
-.main-nav {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-nav a {
-  color: white;
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin: 0 0.4em;
+.anchor-color-unset {
+  color: unset;
 }
 
 .btndiv {
