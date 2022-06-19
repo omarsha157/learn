@@ -1,7 +1,5 @@
 
-# since using SASS remember to use live sass compiler
-
-SASS class names
+# SASS class names
 
 wrapper - wrapped whole document except nav
 active - for showing current page in nav
@@ -12,7 +10,7 @@ tag-symbol - for coloring html tags
 tag-symbol::before and tag-symbol::after - to give "<" and ">" for tag-symbol
 code-out - to give background color to code output
 
-SASS variables
+# SASS variables
 
 body-color - font color for body tag(global)
 
