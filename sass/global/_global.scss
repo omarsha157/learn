@@ -81,6 +81,15 @@ a {
 .tag-symbol {
     color: $code-tag-color;
 }
+
+.attribute {
+    color: $code-attr-color;
+}
+
+.property {
+    color: $code-property-color;
+}
+
 .tag-symbol::before {
     content: "<";
     color: $code-bracket-color;

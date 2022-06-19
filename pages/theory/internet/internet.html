@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="./../../../images/favicon.ico">
+    <link rel="stylesheet" href="./../../../sass/style.css">
+</head>
+<body>
+    <nav>
+        <a href="./../../index.html">Home</a> &#10148; <a class="active">Internet</a>
+    </nav>
+
+    <div class="wrapper">
+
+        <h3>Internet</h3>
+        <p>
+            A global computer network providing a variety of information and communication facilities, consisting of interconnected networks using standardized communication protocols.
+        </p>
+
+        <h3>Internet Protocol Suite</h3>
+        <p>
+            The Internet protocol suite, commonly known as TCP/IP, is the set of communications protocols used in the Internet and similar computer networks. The current foundational protocols in the suite are the Transmission Control Protocol (<strong><a href="#transportProtocol" class="anchor-color-unset">TCP</a></strong>) and the <strong><a href="#internetProtocol" class="anchor-color-unset">Internet Protocol</a></strong> (IP), as well as the User Datagram Protocol (<strong><a href="#transportProtocol" class="anchor-color-unset">UDP</a></strong>).
+        </p>
+        <p>
+            During its development, versions of it were known as the Department of Defense (DoD) model because the development of the networking method was funded by the United States Department of Defense through DARPA. Its implementation is a protocol stack.
+        </p>
+        <p>
+            The Internet protocol suite provides end-to-end data communication specifying how data should be packetized, addressed, transmitted, routed, and received. This functionality is organized into four abstraction layers, which classify all related protocols according to each protocol's scope of networking. From lowest to highest, the layers are the link layer, containing communication methods for data that remains within a single network segment (link); the internet layer, providing internetworking between independent networks; the transport layer, handling host-to-host communication; and the application layer, providing process-to-process data exchange for applications.
+        </p>
+        <p>
+            The technical standards underlying the Internet protocol suite and its constituent protocols are maintained by the Internet Engineering Task Force (IETF). The Internet protocol suite predates the OSI model, a more comprehensive reference framework for general networking systems.
+        </p>
+
+        <h3 id="internetProtocol">Internet protocol</h3>
+        <p>
+            The Internet Protocol (IP) is a protocol, or set of rules, for routing and addressing packets of data so that they can travel across networks and arrive at the correct destination. Data traversing the Internet is divided into smaller pieces, called <strong>packets</strong>. IP information is attached to each packet, and this information helps <strong><a href="#router" class="anchor-color-unset">routers</a></strong> to send packets to the right place. Every device or domain that connects to the Internet is assigned an <strong><a href="#ipAddress" class="anchor-color-unset">IP address</a></strong>, and as packets are directed to the IP address attached to them, data arrives where it is needed.
+        </p>
+        <p>
+            Once the packets arrive at their destination, they are handled differently depending on which <strong><a href="#transportProtocol" class="anchor-color-unset">transport protocol</a></strong> is used in combination with IP. The most common transport protocols are <strong><a href="#transportProtocol" class="anchor-color-unset">TCP</a></strong> and <strong><a href="#transportProtocol" class="anchor-color-unset">UDP</a></strong>.
+        </p>
+
+        <h3 id="router">Routers</h3>
+        <p>
+            A router is a networking device that forwards data packets between computer networks. Routers perform the traffic directing functions on the Internet. Data sent through the internet, such as a web page or email, is in the form of data packets. A packet is typically forwarded from one router to another router through the networks that constitute an internetwork (e.g. the Internet) until it reaches its destination node.
+        </p>
+        <p>
+            A router is connected to two or more data lines from different IP networks. When a data packet comes in on one of the lines, the router reads the network address information in the packet header to determine the ultimate destination. Then, using information in its routing table or routing policy, it directs the packet to the next network on its journey.
+        </p>
+
+        <h3 id="ipAddress">IP address</h3>
+        <p>
+            IP address stands for internet protocol address; it is an identifying number that is associated with a specific computer or computer network. When connected to the internet, the IP address allows the computers to send and receive information.
+        </p>
+
+        <h3 id="transportProtocol">Transport Protocols (UDP & TCP)</h3>
+        <p>
+            Transport protocols reside on top of the IP protocol. Transport protocols run over the best-effort IP layer to provide a mechanism for applications to communicate with each other without directly interacting with the IP layer. In the IP protocol stack, the most widely used two transport protocols are User Datagram Protocol (UDP) and the Transport Control Protocol (TCP). UDP is the simplest protocol in the TCP/IP suite protocol, which is specified in the RFC768 document. It provides a best-effort datagram service where applications provide their own reliability and flow control. TCP provides a reliable byte stream and reduces the application complexity at the cost of a larger header size and more complex transport layer protocol logic. Reliability is achieved by buffering data combined with positive acknowledgments (ACKs) and retransmissions. In the context of smart object networks, UDP has many benefits. First, UDP has a very low overhead for both header size and protocol logic, which means that both the packet transmissions and receptions consume less energy, and each packet has more room for application layer data. The simplicity and low complexity of the protocol logic may be advantageous for systems where memory footprint is at a premium. Since the protocol is simple, implementations typically have a very small code footprint. However, they often lose packets in transit and do not provide any recovery mechanism for lost packets. As smart object networks often interoperate with existing systems where TCP is very widely adopted, the ability to directly communicate with existing systems speaks in favor of TCP. The TCP MSS option is very useful both for memory-constrained systems and for systems that are constrained by a small packet size, such as systems running over wireless 802.15.4 networks.
+        </p>
+
+        
+
+
+
+
+
+
+        <hr>
+        <h3>References</h3>
+        <p>
+            Internet:<a href="https://en.wikipedia.org/wiki/Internet" target="_blank">wikipedia</a>, 
+
+            Internet protocol:what is the internet protocol?<a href="https://www.cloudflare.com/en-in/learning/network-layer/internet-protocol/" target="_blank">cloudflare</a>, 
+
+            Routers: <a href="https://en.wikipedia.org/wiki/Router_(computing)" target="_blank">wikipedia</a>, 
+
+            IP address: <a href="https://www.investopedia.com/terms/i/ip-address.asp#:~:text=our%20editorial%20policies-,What%20Is%20an%20IP%20Address%3F,to%20send%20and%20receive%20information." target="_blank">investopedia</a>, 
+
+            Transport protocol(UDP & TCP):<a href="https://www.sciencedirect.com/topics/computer-science/transport-protocol" target="_blank">sciencedirect</a>, 
+
+            Internet Protocol Suite: <a href="https://en.wikipedia.org/wiki/Internet_protocol_suite" target="_blank">wikipedia</a>, 
+
+
+
+
+
+
+        </p>
+
+    </div>
+
+    <script src="./../../../app.js"></script>
+</body>
+</html>

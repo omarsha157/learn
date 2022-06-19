@@ -86,6 +86,14 @@ a {
   color: #e37178;
 }
 
+.attribute {
+  color: #bd92ea;
+}
+
+.property {
+  color: #c3e88d;
+}
+
 .tag-symbol::before {
   content: "<";
   color: #89ddff;
